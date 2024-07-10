@@ -1,0 +1,20 @@
+\chapter{Equations}
+
+$C(T_i)$
+\[
+C(T_i) = L_i \cdot n_i
+\]
+where:
+\\$C(T_i)$ - Total isolated communication cost of task $T_i$ 
+\\$L_i$ - Communication load of one hop of task $T_i$
+\\$n_i$ - Number of hops from task $T_i$ to destination
+
+\[
+C(T_i) = L_i \cdot n_i + \sum_{k=1}^{j} L_j \cdot n_j
+\]
+\\where:
+\\$C(T_i)$ - Total communication cost of task $T_i$ 
+\\$L_i$ - Communication load of one hop of task $T_i$
+\\$n_i$ - Number of hops from task $T_i$ to destination
+\\$L_j$ - Communication load of one hop of task $T_j$
+\\$n_j$ - Number of common hops for task $T_j$ and $T_i$
